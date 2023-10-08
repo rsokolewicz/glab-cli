@@ -1,0 +1,17 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "glab-cli"
+version = "0.1.0"
+description = "A CLI tool to interact with GitLab"
+authors = ["Robert Sokolewicz <rsokolewicz@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+InquirerPy = ">=0.3.4"
+
+[tool.poetry.scripts]
+glab = "glab_cli:main"
+
